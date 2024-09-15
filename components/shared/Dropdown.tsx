@@ -19,6 +19,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Input } from "../ui/input";
+import { createCategory } from "@/lib/actions/category.actions";
 
 type DropdownProps = {
   value?: string;
