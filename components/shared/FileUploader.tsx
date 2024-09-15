@@ -5,6 +5,8 @@ import { useDropzone } from "@uploadthing/react/hooks";
 import { generateClientDropzoneAccept } from "uploadthing/client";
 import { Button } from "@/components/ui/button";
 import { convertFileToUrl } from "@/lib/utils";
+import { generateReactHelpers } from "@uploadthing/react";
+import { OurFileRouter } from "@/app/api/uploadthing/core";
 
 type FileUploaderProps = {
   onFieldChange: (url: string) => void;
@@ -26,6 +28,8 @@ export function FileUploader({
     onDrop,
     accept: generateClientDropzoneAccept(['image/*']),
   });
+
+  const { useUploadThing } = generateReactHelpers<OurFileRouter>();
 
   return (
     <div
