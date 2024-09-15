@@ -20,7 +20,8 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "typeRoots": ["./node_modules/@types"] // Ensure type declarations are available
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["react", "react-dom", "node"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
