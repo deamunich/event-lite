@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Eventlite',
   description: 'Eventlite is a platform for event management.',
   icons: {
-    icon: ''
+    icon: '/assets/images/logo.svg'
   }
 }
 
